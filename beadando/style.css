@@ -1,0 +1,284 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+body{
+    background-color: yellow;
+    margin: 1%;
+}
+h2{
+    margin:1%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.urlap{
+    padding: 10px;
+}
+.csoportc{
+    font-size: medium;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.urelem{
+    margin: 10px;;
+}
+.keret{
+    background-color: white;
+    padding:10px;
+}
+.keret2{
+    background-color: white;
+    padding:10px;
+    border-radius: 25px;
+}
+.menu{
+    text-align: center;
+    border: 1px solid black;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.focim{
+    text-align: center;
+    font-size: 300%;
+    margin-bottom: 40px;
+    z-index: 11;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.current{
+    font-weight: bolder;
+    border: solid Black 3px;
+    border-radius: 50%;
+    
+}
+.tabla1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bekezd{
+    margin: 1%;
+    flex-basis: 98%;
+    text-indent: 5%;
+    text-align: justify;
+}
+.bekezd3{
+    margin: 1%;
+    flex-basis: 98%;
+    text-indent: 5%;
+    text-align: justify;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.csopkep{
+    margin-top: 0;
+}
+.bekezd2{
+    margin: 1%;
+    margin-bottom: 5%;
+    flex-basis: 98%;
+    text-indent: 2%;
+    text-align: justify;
+}
+.bekezd5{
+    margin: 1%;
+    margin-bottom: 3%;
+    flex-basis: 98%;
+    text-indent: 2%;
+    text-align: justify;
+}
+.utolso{
+    text-indent: 0%;
+    font-style: italic;
+}
+.td1{
+    margin: 1%;
+    flex-basis: 98%;
+}
+.alcim{
+    margin-left:1%;
+    margin-bottom: 1%;
+    text-decoration: underline;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.alcim2{
+    font-weight: bold;
+    margin-left:1%;
+    margin-bottom: 1%;
+}
+.foot{
+    flex-basis: 98%;
+    margin: 1%;
+    font-size: 80%;
+    font-style: italic;
+    margin-top:10%;
+
+}
+.bevez{
+    margin-left: 1%;
+    margin-bottom: 5%;
+}
+.navm{
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.oto{
+   border: 1px solid black; 
+   max-width: 98%;
+   margin: 1%;
+   margin-bottom: 0%;
+}
+.oto2{
+    border: 1px solid black; 
+    max-width: 98%;
+    margin: 1%;
+    margin-bottom: 0%;
+ }
+ul{
+    margin-bottom: 1%;
+}
+li{
+    margin:0;
+    padding:0;
+    margin-bottom: 0;
+}
+.csoportkep{
+    align-self: center;
+}
+figcaption {
+    margin: 1%;
+    color: gray;
+}
+.galala {
+    margin: 1%;
+    color: gray;
+}
+aside{
+    margin-top: 4%;
+    background-color: white;
+}
+a:hover{
+    color: red;
+    font-weight: bold;
+    background-image: url("hatter2.jpg");
+    border: solid black 2px;
+}
+.nagykep{
+    size: 80%;
+}
+.kepala{
+    font-style: italic;
+    font-size: 90%;
+    text-align: center;
+    max-width: 98%;
+    min-width: 95%;
+    margin-bottom: 3%;
+    
+}
+@media only screen and (min-width: 768px) {
+    body{
+        max-width: 80%;
+        align-items: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        flex-direction: column;
+    }
+    figure{
+        max-width: 500px;
+        max-height: auto;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 25%;
+        padding-top:50px;
+    }
+    .bekezd3{
+        text-indent: 0;
+    }
+    li{
+        padding-top: 20px;
+    }
+    .navm{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        flex-basis: 80%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 1%;
+    }
+    .menu{
+        padding-top: 1%;
+        padding-bottom: 1%;
+        flex-basis: 100%;
+        border-bottom: 3px solid black;
+    }
+    .kepes .ota{
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-basis: 90%;
+    }
+    .keret{
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1%;
+    }
+    .alcim{
+        padding-top: 40px;
+    }
+    .current{
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        
+    }
+    .bekezd{
+        margin:1%;
+        padding-top: 0%;
+        flex-basis: 100%;
+        min-width: 68%;
+        
+    }
+    .flex{
+        flex-wrap: nowrap;
+    }
+    .oto2{
+        margin:1%;
+        flex-basis: 50%;
+        height: auto;
+    }
+    .flex2{
+        flex-wrap: wrap;
+    }
+    .ecim{
+        margin-top: 10px;
+        padding-top: 0;
+    }
+    .csoportc{
+        font-size: 33px;
+        text-decoration: underline;
+    }
+    
+}
+@media only screen and (min-width: 768px) {
+    /*tablet*/
+
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tömöry Péter Ádám">
+    <meta name="description" content="Bevezetés a rallizás világába">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rally</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="kepek/ikon.png" sizes="32x32">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style type="text/css">
+        html,
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .slider {
+            width: 80%;
+            min-width: 400px;
+            margin: 100px auto;
+        }
+        .slick-slide {
+            margin: 0px 5px;
+        }
+        .slick-slide img {
+            width: 100%;
+        }
+        .slick-prev:before,
+        .slick-next:before {
+            color: black;
+        }
+        .slick-slide {
+            transition: all ease-in-out .3s;
+            opacity: .2;
+        }
+        .slick-active {
+            opacity: .5;
+        }
+        .slick-current {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <h1 class="focim">Rally</h1>
+    </header>
+    <nav class="flex navm">
+        <a  href="index.html" class="menu"> <p>Kezdőlap</p> </a>
+        <a  href="csoportok.html" class="menu"> <p>Csoportok</p> </a>
+        <a  href="#" class="menu current"> <p>Galéria</p> </a>
+        <a  href="quiz.html" class="menu"> <p>Quiz</p> </a>
+        <a  href="urlap.html" class="menu "> <p>Jegyrendelés</p> </a>
+    </nav>
+    <article class="flex keret">
+        <header><h2 class="alcim2">Legikonikusabb versenyautók a rally történelmében</h2></header>
+        <section><p class="bekezd">A rally világában számos autó vált legendává, amelyek nemcsak a versenyeken elért sikereikkel, hanem technológiai újításaikkal, formáikkal és a versenytörténelemben betöltött szerepükkel is mély nyomot hagytak. Az autók, amelyek a rally történetének meghatározó pillanatait élték meg, gyakran nemcsak gyorsaságukkal, hanem a versenyzők bátorságával és a csapatok kitartásával váltak híressé. A legikonikusabb versenyautók között olyan modellek szerepelnek, amelyek kiemelkedtek a technikai innovációikkal, brutális teljesítményükkel, valamint azokkal a történelmi pillanatokkal, amelyek a rally sport fejlődését irányították. Ez az összefoglaló a rally legismertebb és legelismertebb versenyautóit mutatja be, amelyek a sport történetében örök legendákká váltak.</p></section>
+    </article>
+    <section class="center slider">
+        <div class="tablet"><img src="galeriakepek/audiq.jpg" alt="Az 1985-ös Audi s1 Sportquattro" title="Audi"><p class="kepala">Audi S1 Sport Quattro 1985</p></div>
+        <div class="tablet"><img src="galeriakepek/fordevo.jpg" alt="Ford RS200 Evolution" title="Ford"><p class="kepala">Ford RS200 Evolution 1986</p></div> 
+        <div class="tablet"><img src="galeriakepek/subaru.jpg" alt="Subaru Impreza" title="Subaru"><p class="kepala">Subaru Impreza</p></div>
+        <div class="tablet"><img src="galeriakepek/lancia.jpg" alt="Lancia Delta S4" title="Lancia Delta S4"><p class="kepala">Lancia Delta S4</p></div>
+        <div class="tablet"><img src="galeriakepek/mitsubishi.jpg" alt="Mitshubishi Lancer Evolution" title="Mitshubishi Lancer Evolution"><p class="kepala">Mitsubishi Lancer Evolution</p></div>
+        <div class="tablet"><img src="galeriakepek/puegot.jpg" alt="1985 Peugeot 205 T16" title="1985 Peugeot 205 T16"><p class="kepala">1985 Peugeot 205 T16</p></div>
+        <div class="tablet"><img src="galeriakepek/citroen.jpg" alt="2007 Citroen C4 WRC" title="2007 Citroen C4 WRC"><p class="kepala">2007 Citroen C4 WRC</p></div>
+        <div class="tablet"><img src="galeriakepek/stratos.jpg" alt="1973 Lancia Stratos" title="1973 Lancia Stratos"><p class="kepala">1973 Lancia Stratos</p></div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $(".center").slick({
+                dots: true,
+                 infinite: true,
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: true,
+                            centerPadding: '60px',
+                            slidesToShow: 1
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            arrows: true,
+                            centerPadding: '10px',
+                            slidesToShow: 3
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+    <aside class="keret2 flex"><header class="alcim3"><h2>Érdekesség:</h2></header>
+        <p class="bekezd5">A Group B versenyautók motorjai 450-600 lóerős teljesítménnyel rendelkeztek, és rendkívül könnyűek voltak, így a gyorsulásuk is hatalmas volt. Néhány Group B autó 0-100 km/h között mindössze 2-3 másodpercet tudott, ami az akkori Forma-1-es autók gyorsulási idejét is megközelítette, vagy bizonyos esetekben akár felül is múlta azt. Míg a Forma-1-es autók jellemzően a legnagyobb sebességre és a kanyarvételi képességekre vannak optimalizálva, a rallyautók teljesítménye a gyors kiindulásra és terepen való gyors közlekedésre lett kihegyezve.</p>
+    </aside>
+
+
+    <footer> <p class="foot">A weboldalon olvasottak nem feltétlenül állnak kapcsolatban a valósággal és csak tanulási célból íródtak!</p> </footer>
+        
+</body>
+</html>

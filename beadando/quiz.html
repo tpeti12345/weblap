@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tömöry Péter Ádám">
+    <meta name="description" content="Rally Quiz - Teszteld tudásod a rally világa terén!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rally</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="kepek/ikon.png" sizes="32x32">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="focim">Rally</h1>
+    </header>
+    <nav class="flex navm">
+        <a href="index.html" class="menu"><p>Kezdőlap</p></a>
+        <a href="csoportok.html" class="menu"><p>Csoportok</p></a>
+        <a href="galeria.html" class="menu"><p>Galéria</p></a>
+        <a href="#" class="menu current"><p>Quiz</p></a>
+        <a  href="urlap.html" class="menu "> <p>Jegyrendelés</p> </a>
+    </nav>
+    
+    <section>
+        <article class="keret">
+            <header>
+                <h2>Rally Kvíz</h2>
+            </header>
+            <section>
+                    <div class="urlap">
+                        <p class="kerdes">Válassz egy autó márkát</p>
+                        <div class="opcio">
+                            <label><input type="radio" name="elso" value="A"> Audi</label>
+                            <label><input type="radio" name="elso" value="B"> Hyundai</label>
+                            <label><input type="radio" name="elso" value="C"> Ford</label>
+                        </div>
+                    </div>
+                    <div class="urlap">
+                        <p class="kerdes">Válassz egy Rally csoportot</p>
+                        <div class="opcio">
+                            <label><input type="radio" name="masodik" value="A"> WRC</label>
+                            <label><input type="radio" name="masodik" value="B"> Group B</label>
+                            <label><input type="radio" name="masodik" value="C"> Group N</label>
+                        </div>
+                    </div>
+                    <div class="urlap">
+                        <p class="kerdes">Add meg a kívánt lóerő mértékét. Ügyelj arra,hogy bizonyos csoportokban nem lehet átlépni egy adott értéket!</p>
+                        <label for="loero">Kívánt lóerő: </label><input type="text" name="mennyiseg" id="loero">
+                        <span id="hiba" style="color: red;"></span>
+                        </div>
+                    </div>
+                    <button type="button" id="eredmeny">Eredmény megtekintése</button>
+                    <input type="reset" value="Újra" name="ujra">
+                <div id="vege"></div>
+            </section>
+        </article>
+    </section>
+    <script src="script/script.js"></script>
+    
+    <footer> <p class="foot">A weboldalon olvasottak nem feltétlenül állnak kapcsolatban a valósággal és csak tanulási célból íródtak!</p> </footer>
+</body>
+</html>

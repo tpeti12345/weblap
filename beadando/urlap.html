@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tömöry Péter Ádám">
+    <meta name="description" content="Bevezetés a rallizás világába">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rally</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="kepek/ikon.png" sizes="32x32">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1 class="focim">Rally</h1>    
+    </header>
+    <nav class="flex navm">
+        
+        <a  href="index.html" class="menu"> <p>Kezdőlap</p> </a>
+        <a  href="csoportok.html" class="menu"> <p>Csoportok</p> </a>
+        <a  href="galeria.html" class="menu"> <p>Galéria</p> </a>
+        <a  href="quiz.html" class="menu"> <p>Quiz</p> </a>
+        <a  href="#" class="menu current"> <p>Jegyrendelés</p> </a>
+    </nav>
+    <section>
+        <article class="keret">
+           <header ><h2 class="csoportc"> Rendelj jegyet!</h2></header>
+           <form method="post" action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php" class="urlapteljes">
+            <label>
+                Add meg a telefonszámod:<br>
+                <input class="urelem" type="tel" size="50" name="telefonszam"><br>
+            </label>
+            <label>
+                Add meg a E-mail címed:<br>
+                <input class="urelem" type="email" size="50" name="email"><br>
+            </label>
+            <label>
+                Mikorra szeretnél jegyet venni:<br>
+                <input class="urelem" type="month" size="50" name="evszam"><br>
+            </label>
+            <label>
+                Melyik kontinensre vennél jegyet?<br>
+                <input class="urelem" type="text" size="30" name="kontinens" list="kontinensek">
+                <datalist id="kontinensek">
+                    <option value="Afrika"></option>
+                    <option value="Európa"></option>
+                    <option value="Ázsia"></option>
+                    <option value="Észak-Amerika"></option>
+                    <option value="Dél-Amerika"></option>
+                    <option value="Óceánia"></option>
+                </datalist>
+            </label>
+            <br>
+            Mely csoport/csoportok érdekelnek? <br>
+            <div class="urlap">
+                <label>
+                    <input class="urelem" type="checkbox" name="A">Group A
+                </label>
+                 <label>
+                    <br>
+                    <input class="urelem" type="checkbox" name="WRC">World Rally Championship (WRC)
+                    <br>
+                </label>
+                <label>
+                    <input class="urelem" type="checkbox" name="N">Group N
+                    <br>
+                </label>
+                <label>
+                    <input class="urelem" type="checkbox" name="super">Super 1600
+                    <br>
+                </label>
+            </div>
+            <div class="urlap">
+                <label>
+                    Hány jegyet szeretnél? Maximum: 10<br>
+                    <input class="urelem" type="number" name="szoba" value="1" min="1" max="10" step="1">
+            </label>
+            </div>
+            <label class="urlap">
+                Milyen korosztályba tartozol<br>
+                <select class="urelem" name="kor" >
+                    <option value="gyer">Kisgyerek 0-12</option>
+                    <option value="Tin">Tinédzser 12-18</option>
+                    <option value="Ffelnott">Fiatal Felnőtt 18-25</option>
+                    <option value="felnott">Felnőtt 25-65</option>
+                    <option value="idos">Idős 65-</option>
+                </select>
+            </label><br>
+            <div class="urlap">
+                <input type="submit" value="Rendelés">
+                <input type="reset" value="Reset">
+            </div>
+           </form>
+    </section>
+        <footer> <p class="foot">A weboldalon olvasottak nem feltétlenül állnak kapcsolatban a valósággal és csak tanulási célból íródtak!</p> </footer>
+        
+</body>
+</html>
